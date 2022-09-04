@@ -134,7 +134,7 @@ const toggleLoader = (isLoading) => {
 };
 
 
-// // displayModalDetailes();
+// displayModalDetailes();
 
-// loadCategoryDetails();
-// loadCategory();
+loadCategoryDetails();
+loadCategory();
