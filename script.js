@@ -123,15 +123,15 @@ const displayCategorydetail = (details) => {
 
 
 
-// const toggleLoader = (isLoading) => {
-//   const loader = document.getElementById("loader");
+const toggleLoader = (isLoading) => {
+  const loader = document.getElementById("loader");
   
-//   if (isLoading) {
-//     loader.classList.remove("d-none");
-//   } else {
-//     loader.classList.add("d-none");
-//   }
-// };
+  if (isLoading) {
+    loader.classList.remove("d-none");
+  } else {
+    loader.classList.add("d-none");
+  }
+};
 
 
 // // displayModalDetailes();
