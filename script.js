@@ -5,34 +5,34 @@ const loadCategory = () => {
     .catch((error) => displayCategory(error));
 };
 
-// const displayCategory = (catid) => {
+const displayCategory = (catid) => {
 
 
-//   const catContainer = document.getElementById("load-cat");
+  const catContainer = document.getElementById("load-cat");
 
-//   let catDiv = document.createElement("button");
-//   let cnt = 0;
+  let catDiv = document.createElement("button");
+  let cnt = 0;
  
-//   catid.forEach((category) => {
+  catid.forEach((category) => {
     
 
-//     if (cnt == 0) {
-//       const catDiv = document.createElement("button");
-//       catDiv.classList.add("flex-items");
-//       catDiv.innerHTML = `<a onclick="loadCategoryDetails('08')" class="nav-link"> Home </a>
-//       `;
-//       catContainer.appendChild(catDiv);
-//     }
-//     const catDiv = document.createElement("button");
-//     catDiv.classList.add("flex-items");
-//     catDiv.innerHTML = `<a onclick="loadCategoryDetails('${category.category_id}')" class="nav-link">${category.category_name}</a>
+    if (cnt == 0) {
+      const catDiv = document.createElement("button");
+      catDiv.classList.add("flex-items");
+      catDiv.innerHTML = `<a onclick="loadCategoryDetails('08')" class="nav-link"> Home </a>
+      `;
+      catContainer.appendChild(catDiv);
+    }
+    const catDiv = document.createElement("button");
+    catDiv.classList.add("flex-items");
+    catDiv.innerHTML = `<a onclick="loadCategoryDetails('${category.category_id}')" class="nav-link">${category.category_name}</a>
    
       
-//       `;
-//     catContainer.appendChild(catDiv);
-//     cnt++;
-//   });
-// };
+      `;
+    catContainer.appendChild(catDiv);
+    cnt++;
+  });
+};
 
 
 
